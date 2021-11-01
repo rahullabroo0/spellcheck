@@ -10,6 +10,13 @@ class App extends React.Component {
   }
 
   handleChange(event) {
+        
+    if(event.target.value === "realy"){     
+      event.target.value="really";
+    }
+    if(event.target.value === "wierd"){      
+      event.target.value="weird";
+    }
     this.setState({ textAreaValue: event.target.value });
   }
 
